@@ -1,0 +1,46 @@
+//create user rohan and add vehicle
+add_user("Rohan", M, 36)
+add_vehicle("Rohan","Swift","KA-01-12345")
+
+//create user Shashank and add vehicle
+add_user("Shashank", M, 29);
+add_vehicle("Shashank","Baleno","TS-05-62395")
+
+//create user Nandini
+add_user("Nandini", F, 29)
+
+//create user Shipra and add vehicle
+add_user("Shipra", F, 27)
+add_vehicle("Shipra","Polo","KA-05-41491")
+add_vehicle("Shipra","Activa","KA-12-12332")
+
+//create user Gaurav
+add_user("Gaurav",M,29)
+
+//create user Rahul and add vehicle
+add_user("Rahul", M, 35)
+add_vehicle("Rahul", "XUV",KA-05-1234)
+
+//Rides Offered
+offer_ride("Rohan","Swift","KA-01-12345",1,"Hyderabad","Bangalore")
+offer_ride("Shipra","Activa","KA-12-12332",1,"Bangalore","Mysore")
+offer_ride("Shipra","Polo","KA-05-41491",2,"Bangalore","Mysore")
+offer_ride("Shashank","Baleno","TS-05-62395",2,"Hyderabad","Bangalore")
+offer_ride("Rahul","XUV","KA-05-1234",5,"Hyderabad","Bangalore")
+offer_ride("Rohan","Swift","KA-01-12345",1,"Bangalore","Pune")
+
+//Ride requests
+select_ride("Nandini","Bangalore","Mysore",1,"Most Vacant")
+select_ride("Gaurav","Bangalore","Mysore",1,"Preferred Vehicle=Activa")
+select_ride("Shashank","Mumbai","Bangalore",1,"Most Vacant")
+select_ride("Rohan","Hyderabad","Bangalore",1,"Preferred Vehicle=Baleno")
+select_ride("Shashank","Hyderabad","Bangalore",1,"Preferred Vehicle=Polo")
+
+//End Ride Requests
+end_ride("Shipra","KA-05-41491")
+end_ride("Shipra","KA-12-12332")
+end_ride("Shashank","TS-05-62395")
+end_ride("Rohan","KA-01-12345")
+
+//Find Total Rides by user
+print_ride_stats()

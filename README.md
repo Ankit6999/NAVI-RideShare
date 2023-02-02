@@ -1,1 +1,1 @@
-# NAVI-RideShare
+# RideShare App
